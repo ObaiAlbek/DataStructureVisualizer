@@ -1,4 +1,3 @@
-/* ====== Basics ====== */
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
@@ -12,15 +11,13 @@ body {
     flex-direction: column; 
 }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-/* Topbar: volle Breite + Flex */
 .topbar {
   background: #1f2937;
   color: #e5e7eb;
 }
 
-/* Container in der Topbar NICHT zentrieren, sondern vollbreit */
 .topbar .container {
-  max-width: none;      /* wichtig: nicht auf 1100px begrenzen */
+  max-width: none;      
   width: 100%;
   margin: 0;
   padding: 12px 20px;
@@ -28,12 +25,10 @@ body {
   align-items: center;
 }
 
-/* Brand nach links, Menü wird nach rechts „geschoben“ */
 .topbar .brand { margin-right: auto; }
 
-/* Menü rechts ausrichten + Abstände über gap (nicht Padding 60px) */
 .topbar .menu {
-  margin-left: auto;    /* alternativ zur brand-Regel */
+  margin-left: auto;   
   display: flex;
   gap: 24px;
   list-style: none;
@@ -45,7 +40,7 @@ body {
   color: #e5e7eb;
   text-decoration: none;
   font-size: 14px;
-  padding: 6px 10px;    /* kleines Klickziel statt 60px */
+  padding: 6px 10px;    
 }
 
 .topbar .menu a:hover { text-decoration: underline; }
@@ -57,7 +52,7 @@ body {
 }
 .hero {
   display: grid;
-  grid-template-columns: 500px 1fr;  /* Bild links, Text rechts */
+  grid-template-columns: 500px 1fr;  
   gap: 48px;
   align-items: center;
   padding: 36px 0 60px;
@@ -76,7 +71,7 @@ body {
   font-size: larger;
 }
 
-/* ====== Footer / Kontakt ====== */
+
 .footer {
   margin-top: auto;
   background: #1f2937;
@@ -86,7 +81,7 @@ body {
 }
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;    /* links Formular, rechts Infos */
+  grid-template-columns: 1fr 1fr;    
   gap: 200px;
   padding: 42px 0 48px;
 }
@@ -98,24 +93,24 @@ body {
   margin: 0 0 12px;
 }
 form { display: grid; gap: 12px; max-width: 420px; }
-input, textarea, button {
+input, textarea, input[type="submit"] {
   border: none;
   border-radius: 6px;
   padding: 10px 12px;
   font-size: 14px;
 }
 textarea { min-height: 180px; resize: vertical; }
-button {
+input[type="submit"]  {
   width: 110px;
   background: #0b0b0b;
   color: #fff;
   cursor: pointer;
   transition: transform .06s ease, filter .2s ease;
 }
-button:hover { filter: brightness(1.1); }
-button:active { transform: translateY(1px); }
+input[type="text"] :hover { filter: brightness(1.1); }
+input[type="text"] :active { transform: translateY(1px); }
 
-/* Kontaktinfos rechts */
+
 .contact-info h3 {
   font-size: 30px;
   margin: 0 0 8px;
@@ -123,7 +118,6 @@ button:active { transform: translateY(1px); }
 }
 .contact-info p { margin: 0 0 18px; color: #d1d5db; font-size: 20px; }
 
-/* Social Icons (ohne externe Libraries) */
 .social { display: flex; gap: 14px; align-items: center; }
 .icon {
   width: 36px; height: 36px;
@@ -138,11 +132,10 @@ button:active { transform: translateY(1px); }
 }
 .icon:hover { filter: brightness(1.15); }
 .icon:active { transform: translateY(1px); }
-.icon.in { font-size: 13px; }   /* „in“ etwas kleiner aussehen lassen */
+.icon.in { font-size: 13px; }  
 .icon.ig { font-size: 16px; }
 .icon.gh { font-size: 18px; }
 
-/* ====== Responsive ====== */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; text-align: left; }
   .avatar { order: 0; }
