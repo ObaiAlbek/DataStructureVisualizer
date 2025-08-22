@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="aboutMe.css" rel="stylesheet">
-    <title>About me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="aboutMe.css" rel="stylesheet" />
+  <title>About me</title>
 </head>
 <body>
-     <div class="page">
+  <div class="page">
+    <!-- Topbar -->
     <nav class="topbar">
-      <h1 class="brand">Obai Albek</h1>
-      <ul class="menu">
-        <li><a href="#">Homepage</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
+      <div class="container">
+        <h1 class="brand">Obai Albek</h1>
+        <ul class="menu">
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- Weißer Content-Block mit Bild + Text -->
     <main class="card">
-      <header class="hero">
-      
-      </header>
+      <div class="container hero">
+        <figure class="avatar">
+          <img src="Obai_Albek_Bewerbungsfoto.jpeg" alt="Obai Albek"/>
+        </figure>
+        <p class="intro">
+          Hi, I'm Obai Albek, a computer science student with a strong passion for data structures,
+          algorithms, and software development. This project is part of my journey to better understand
+          how core concepts in computer science work — and to make them more visual and interactive
+          for others. Feel free to explore, learn, and get in touch if you have questions or feedback!
+        </p>
+      </div>
     </main>
 
+    <!-- Dunkler Footer mit Kontakt -->
     <footer class="footer">
-      
+      <div class="container contact">
+        <section class="contact-form">
+          <h2>MESSAGE ME</h2>
+          <form>
+            <input type="text" name="user_name" placeholder="Name" required />
+            <input type="email" name="user_email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" placeholder="Type your Message here..." required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+
+        <section class="contact-info">
+          <h3>CALL ME</h3>
+          <p>0049 178 3740356</p>
+
+          <h3>OR EMAIL</h3>
+          <p>obay.albeek@gmail.com</p>
+
+          <h3>SOCIAL ME</h3>
+          <div class="social">
+            <a aria-label="Facebook" href="#" class="icon fb">f</a>
+            <a aria-label="LinkedIn" href="#" class="icon in">in</a>
+            <a aria-label="Instagram" href="#" class="icon ig">◐</a>
+            <a aria-label="GitHub" href="#" class="icon gh">🐙</a>
+          </div>
+        </section>
+      </div>
     </footer>
   </div>
-    
 </body>
 </html>
