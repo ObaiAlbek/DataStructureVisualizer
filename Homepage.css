@@ -1,0 +1,95 @@
+*{ box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #111827;   
+}
+
+.page{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;           /* Flexbox für vertikale Anordnung */
+}
+
+/* ---- Topbar ---- */
+.topbar{
+  background:#1f2937; 
+  color: white;
+  display: flex;                     /* links Titel, rechts Menu */
+  align-items: center;
+  justify-content: space-between;    /* Abstand zwischen Brand & Menu */
+  padding: 40px 40px;
+}
+
+.topbar .brand{
+  font-size: 30px;
+  margin: 0;
+}
+
+.topbar .menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+}
+
+.topbar .menu a{
+  color: #e5e7eb;  
+  text-decoration: none;
+  font-size: 30px;
+   justify-content: space-between;
+   padding: 60px;
+}
+
+.topbar .menu a:hover{
+  text-decoration: underline;
+}
+
+/* ---- „Karte“ mit Inhalt ---- */
+.card{
+  text-align: center;
+  margin-top: 100px;
+  border: 1px solid rgb(245, 241, 241);
+  width: 100%;
+  padding: 0px;
+}
+
+.hero .getStarted{
+      padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}
+.hero h1{
+  font-size: clamp(28px, 4vw, 44px); /* responsive Überschrift */
+  margin: 0 0 10px;
+}
+
+.hero p{
+  margin: 0 0 16px;
+  color: #374151; 
+  line-height: 1.5;
+  font-size: larger;
+}
+
+
+/* ---- Footer ---- */
+.footer{
+  margin-top: auto;         /* Footer an Seitenende schieben */
+  background: #1f2937; 
+  color: #e5e7eb;
+  text-align: center;
+  padding: 14px 10px;
+  font-size: 14px;
+}
+
+/* ---- Kleines Responsive-Tuning ---- */
+@media (max-width: 640px){
+  .topbar { padding: 10px 14px; }
+  .card   { margin: 16px auto; padding: 18px; }
+  .topbar .menu{ gap: 12px; }
+}
