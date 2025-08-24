@@ -34,9 +34,9 @@ if (isset($_POST["send"])) {
         $mail->Subject = $subject;
         $mail->Body    = $message;
         $mail->send();
-        echo "Nachricht erfolgreich gesendet!";
+        header("Location: ../html/feedback.html");
     } catch (Exception $e) {
-        echo "Fehler beim Senden: {$mail->ErrorInfo}";
+       
     }
 }
 ?>

@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;             
+  display: flex;             
+  justify-content: center;    
+  align-items: center;     
+  background-color: #233142;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Arial;
+}
+
+.container{
+    border: 1px solid black;
+    background-color:#364A62 ;
+    height: 700px;
+    width: 800px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.container h1{
+    color:#00FF6A;
+    font-family: Roboto;
+    font-size: 70px;
+}
+
+.container p{
+    color:#ffffff;
+    font-family: Roboto;
+    font-size: 40px;
+
+}
+
+.container a{
+    color:#726FC5;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+
+}
