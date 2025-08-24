@@ -54,12 +54,13 @@ body {
 }
 
 .hero .getStarted{
-      padding: 10px 16px;
+  padding: 10px;
   border: none;
   border-radius: 8px;
   background: #111827;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
 }
 .hero h1{
   font-size: clamp(28px, 4vw, 44px); /* responsive Überschrift */
