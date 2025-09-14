@@ -2,7 +2,7 @@
 
 ## Über mich & die Idee
 
-Ich studiere Informatik im Bachelor an der Hochschule Mannheim und möchte mit diesem Projekt meine Kenntnisse in **Datenstrukturen** und **Webentwicklung** praktisch verbinden.  
+Ich studiere Informatik Bachelor an der Hochschule Mannheim und möchte mit diesem Projekt meine Kenntnisse in **Datenstrukturen** und **Webentwicklung** praktisch verbinden.  
 
 Die Idee entstand, weil ich selbst beim Lernen von Algorithmen gemerkt habe, dass **visuelle Darstellungen** vieles einfacher machen. Mit dieser App will ich daher interaktive Animationen anbieten, die das Verständnis von **Stack, Queue, Listen, Bäumen und Graphen** erleichtern.  
 
